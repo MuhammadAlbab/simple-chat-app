@@ -136,7 +136,7 @@ watch(roomId, (id) => {
       </div>
     </div>
     <div class="room-action shadow">
-      <form class="input-form" @submit.prevent="sendMessage">
+      <form class="input-form" @submit.prevent="handleSendMsg">
         <textarea ref="messageBoxRefs" autofocus v-model="message" placeholder="Write a message..."
           class="w-fit mr-4 p-2" :rows="5" @keydown.enter="handleEnter"></textarea>
         <div>
